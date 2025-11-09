@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Patie’s Cakes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- header same as others -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo-circle"><img src="logo-placeholder.png" alt="" /></div>
+        <span class="brand-name">Patie’s Cakes</span>
+      </a>
+      <button id="nav-toggle-4" class="nav-toggle" aria-label="Open menu">☰</button>
+      <nav class="site-nav" id="site-nav-4">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Gallery</h1>
+    <p>Click any image to view full size.</p>
+
+    <div class="gallery-grid">
+      <img src="cake1.jpg" alt="Cake 1" class="lightbox-trigger" />
+      <img src="cake2.jpg" alt="Cake 2" class="lightbox-trigger" />
+      <img src="cake3.jpg" alt="Cake 3" class="lightbox-trigger" />
+      <img src="cake4.jpg" alt="Cake 4" class="lightbox-trigger" />
+      <img src="cake5.jpg" alt="Cake 5" class="lightbox-trigger" />
+      <img src="cake6.jpg" alt="Cake 6" class="lightbox-trigger" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><div class="logo-circle small"><img src="logo-placeholder.png" alt="" /></div><div><strong>Patie’s Cakes</strong></div></div>
+      <div class="footer-links"><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a></div></div>
+      <div class="copyright"><p>© <span id="year-4"></span> Patie’s Cakes</p></div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lb-close-2" class="lb-close" aria-label="Close">✕</button>
+    <img id="lb-img-2" alt="Full size" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
