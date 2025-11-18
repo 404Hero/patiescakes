@@ -17,6 +17,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const images = document.querySelectorAll('.gallery-img');
+const viewer = document.getElementById('fullscreen-viewer');
+const fullImage = document.getElementById('full-image');
+const closeBtn = document.querySelector('.close');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    viewer.style.display = 'flex';
+    fullImage.src = img.src;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  viewer.style.display = 'none';
+});
+
+// Optional: Close when clicking outside the image
+viewer.addEventListener('click', (e) => {
+  if (e.target === viewer) viewer.style.display = 'none';
+});
+
   // Lightbox for any image with .lightbox-trigger
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lb-img') || document.getElementById('lb-img-2');

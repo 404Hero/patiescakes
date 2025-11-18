@@ -7,11 +7,10 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- header same as others -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <div class="logo-circle"><img src="logo-placeholder.png" alt="" /></div>
+        <div class="logo-circle"><img src="logo/Logo.png" alt="" /></div>
         <span class="brand-name">Patie’s Cakes</span>
       </a>
       <button id="nav-toggle-4" class="nav-toggle" aria-label="Open menu">☰</button>
@@ -28,26 +27,77 @@
   </header>
 
   <main class="container">
-    <h1>Gallery</h1>
-    <p>Click any image to view full size.</p>
 
-    <div class="gallery-grid">
-      <img src="cake1.jpg" alt="Cake 1" class="lightbox-trigger" />
-      <img src="cake2.jpg" alt="Cake 2" class="lightbox-trigger" />
-      <img src="cake3.jpg" alt="Cake 3" class="lightbox-trigger" />
-      <img src="cake4.jpg" alt="Cake 4" class="lightbox-trigger" />
-      <img src="cake5.jpg" alt="Cake 5" class="lightbox-trigger" />
-      <img src="cake6.jpg" alt="Cake 6" class="lightbox-trigger" />
-    </div>
+    <section class="gallery">
+  <h2>Our Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/fv2.jpg" alt="Cake 1" class="gallery-img">
+    <img src="images/p12.jpg" alt="Cake 2" class="gallery-img">
+    <img src="images/cupcakes.jpg" alt="Cake 3" class="gallery-img">
+    <img src="images/p19.jpg" alt="Cake 4" class="gallery-img">
+    <img src="images/hennessy.jpg" alt="Cake 5" class="gallery-img">
+    <img src="images/p5.jpg" alt="Cake 6" class="gallery-img">
+    <img src="images/p11.jpg" alt="Cake 7" class="gallery-img">
+    <img src="images/p9.jpg" alt="Cake 8" class="gallery-img">
+  </div>
+</section>
+
+<div id="fullscreen-viewer" class="fullscreen">
+  <span class="close">&times;</span>
+  <img id="full-image" src="images/fav2.jpg" alt="Full View">
+</div>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand"><div class="logo-circle small"><img src="logo-placeholder.png" alt="" /></div><div><strong>Patie’s Cakes</strong></div></div>
-      <div class="footer-links"><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a></div></div>
-      <div class="copyright"><p>© <span id="year-4"></span> Patie’s Cakes</p></div>
+      <div class="footer-brand">
+        <div class="logo-circle small">
+          <img src="logo/Logo.png" alt="Patie’s Cakes logo small" />
+        </div>
+        <div>
+          <strong>Patie’s Cakes</strong>
+          <p>Custom cakes & pastries</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <nav>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="socials">
+    
+        <p>&copy; 2025 Patie's Cakes. Sweet moments every time.</p>
+       <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100078694912647" target="_blank">
+            <img src="icons/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/cakespatie/" target="_blank">
+            <img src="icons/insta.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/27632103702" target="_blank">
+            <img src="icons/whatsapp.png" alt="WhatsApp">
+        </a>
+        </div>
+
+    </footer>
+<a href="https://wa.me/27632103702" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+   <img src="icons/whatsapp.png" alt="WhatsApp">
+</a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lb-close" class="lb-close" aria-label="Close">✕</button>
+    <img id="lb-img" alt="Full size" />
+  </div>
+
+  <script src="script.js"></script>
 
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <button id="lb-close-2" class="lb-close" aria-label="Close">✕</button>
